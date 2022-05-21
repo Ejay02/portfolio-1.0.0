@@ -1,0 +1,387 @@
+
+*{
+  /* 	padding: 0; */
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+   
+  }
+  
+  body{
+    height: 100vh;
+    width: 100%;
+     background: #3d79bd;
+  }
+  
+  /* Home Page */
+  
+  .home {
+   content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #3d79bd;
+  }
+  
+  .nav {
+    width: 75%;
+    height: 75px;
+    margin-left: 25%;
+    margin-right: auto;
+    margin-top: 2%;
+  }
+  
+  .one, .two, .three, .four {
+      width: 25%;
+      float: left;
+  }
+  
+  /* calc */
+  
+  .cont {
+      max-width: 400px;
+      margin: 10vh auto 0 auto;
+      box-shadow: 0px 0px 43px 17px rgba(153,153,153,1);
+  
+  }
+  
+  #display {
+      text-align: right;
+      height: 70px;
+      line-height: 70px;
+      padding: 16px 8px;
+      font-size: 25px;
+  }
+  
+  .buttons {
+      display: grid;
+      border-bottom: 1px solid #999;
+      border-left: 1px solid#999;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  
+  .buttons > div {
+      border-top: 1px solid #999;
+      border-right: 1px solid#999;
+  }
+  
+  .button {
+      border: 0.5px solid #999;
+      line-height: 100px;
+      text-align: center;
+      font-size: 25px;
+      cursor: pointer;
+  }
+  
+  #equal {
+      background-color: rgb(85, 85, 255);
+      color: white;
+  }
+  
+  .button:hover {
+      background-color: #323330;
+      color: white;
+      transition: 0.5s ease-in-out;
+  }
+  
+  /* About  */
+  
+  
+  /* Typewriter */
+  .me {
+    color: black;
+      overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid orange; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em;
+    animation: 
+      typing 5s steps(30, end),
+      blink-caret 1s step-end infinite;
+    text-align:center;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 60% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+  }
+  
+  #con{
+    text-align:center;
+    margin: 5px;
+    padding: 30px;
+  }
+  
+  .bout, .goal, .job{
+    margin: 10px;
+    padding:10px;
+  }
+  
+  
+  /* Contact Page  */
+  
+  .container{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 100px;
+  }
+  
+  .container:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: url("https://images.unsplash.com/photo-1652728485317-b867e603f8cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center;
+    background-size: cover;
+    filter: blur(50px);
+    z-index: -1;
+  }
+  
+  .contact-box{
+    max-width: 850px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0px 0px 19px 5px rgba(0,0,0,0.19);
+  }
+  
+  .left{
+    background: url("https://images.unsplash.com/photo-1652728485317-b867e603f8cb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80") no-repeat center;
+    background-size: cover;
+    height: 100%;
+  }
+  
+  .right{
+    padding: 25px 40px;
+  }
+  
+  h2{
+    position: relative;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+  }
+  
+  h2:after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 4px;
+    width: 50px;
+    border-radius: 2px;
+    background-color: #2ecc71;
+  }
+  
+  .field{
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    outline: none;
+    background-color: rgba(230, 230, 230, 0.6);
+    padding: 0.5rem 1rem;
+    font-size: 1.1rem;
+    margin-bottom: 22px;
+    transition: .3s;
+  }
+  
+  .field:hover{
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  textarea{
+    min-height: 150px;
+  }
+  
+  .btn{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    background-color: #2ecc71;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+  .btn:hover{
+      background-color: #27ae60;
+  }
+  
+  .field:focus{
+      border: 2px solid rgba(30,85,250,0.47);
+      background-color: #fff;
+  }
+  
+  @media screen and (max-width: 880px){
+    .contact-box{
+      grid-template-columns: 1fr;
+    }
+    .left{
+      height: 200px;
+    }
+  }
+  
+  
+  /* Button */
+  .wrapper{
+    display: flex;
+    top: 50%;
+    left: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+  
+  
+  }
+  
+  #a{
+    display: block;
+    font-size: 12px;
+    font-family: sans-serif;
+    text-decoration: none;
+    color: #333;
+    padding: 5px;
+    letter-spacing: 1px;
+    transition: all .25s;
+  }
+  
+  #a:hover{
+    letter-spacing: 5px;
+    color: purple;
+  }
+  
+  /* Register Page Login */
+  .register{
+    background: #3d79bd;
+    color: #435160;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .h2{
+    color: #111212;
+    font-family: 'Sofia', cursive;
+    font-weight: bold;
+    font-size: 3.6em;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .login{
+    width: 350px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -175px;
+  }
+  
+  .input{
+      width: 350px;
+      padding: 20px 0px;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid #435160;
+      outline: none;
+      font-size: 16px;
+  
+  }
+  
+  .forgot {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    display: block;
+    font-size: 11px;
+    text-align: center;
+    font-weight: bold; 
+    color: black;
+    text-decoration: none;
+    border: 5px;
+  }
+    .forgot:hover {
+      margin-top: 10px;
+      margin-bottom: 30px;
+      display: block;
+      font-size: 11px;
+      text-align: center;
+      font-weight: bold;
+      color: #680343;
+    }
+  
+  .agree{
+    padding: 30px 0px;
+    font-size: 12px;
+    text-indent: 25px;
+    line-height: 15px;
+  }
+  
+  ::-webkit-input-placeholder {
+    color: #435160;
+    font-size: 14px; 
+  }
+  
+  .animated {
+    animation-fill-mode: both;
+    animation-duration: 1s; 
+    background: #1FCE6D;
+    border: 0;
+    width: 350px;
+    height: 40px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background .3s ease-in-out;
+  }
+  
+  .animated:hover{
+    background: #16aa56;
+    animation-name: shake;
+  }
+  
+  @keyframes shake {
+    0%, 100% {
+      transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% {
+      transform: translateX(-10px); }
+    20%, 40%, 60%, 80% {
+      transform: translateX(10px); } }
+  
+  /* Footer  */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    margin-top: 10px;
+    text-align: right;
+     background-color: #323330;
+  }
+  
+  .ico {
+    float:left;
+    color: white;
+    display: inline;
+    text-decoration: none;
+    padding: 2px;
+    background-color: #323330
+  }
+  
